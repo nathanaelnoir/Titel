@@ -1,0 +1,106 @@
+% universal settings
+\documentclass[a5paper,11pt,twoside,onecolumn,openany,extrafontsizes,final]{memoir}%,showtrims pour les traits de coupe
+\epigraphfontsize{\small\itshape}
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
+%=======================
+%Pour le fond perdu  prÃ©press
+%\setstocksize{224.8mm}{162.9mm}
+%\settrimmedsize{210mm}{148mm}{*}
+%\settrims{7.4mm}{7.45mm}
+\quarkmarks
+%=====================
+\input{styles}
+% defining the title and the author
+
+\title{Inge}
+\author{\Huge Ingeborg Sader}
+\newcommand{\press}{Kurzgeschichten}
+
+\setlength\parindent{0pt}
+
+% BEGIN THE DOCUMENT
+\begin{document}
+\pagestyle{empty}
+\includepdf{Illustrations/titel.jpg}
+%\includepdf{Illustrations/carte_zad.jpg}
+% the half title page
+%\halftitlepage
+%\cleardoublepage
+% the title page
+\titleM
+\vspace{2\baselineskip}
+%\par
+\vspace{\baselineskip}
+\begin{center}
+\begin {tabular}{lr}
+Erste Auflabge: & 24. Dezember 2020\\
+%DeuxiÃ¨me impression avec corrections: & 10 novembre 2017 \\
+%DeuxiÃ¨me Ã©dition: & 24 novembre 2017\\
+\end{tabular}
+\end{center}
+\vspace{2\baselineskip}
+\doclicenseThis
+\vspace*{\baselineskip}
+%\centerline{\textit{Retrouvez ce livre au format numÃ©rique au} \url{nathanaelnoi@gmail.com}} 
+%%\centerline{\url{http://livretzad.lamad.net}}
+\clearpage
+
+% begin front matter
+\frontmatter
+\pagestyle{mystyle}
+% preface
+\input{Chapitres/0_preambule}
+%\newpage\phantom{blabla}
+
+ \include{Inge/content/frontmatter/dedication}
+  \include{Inge/content/frontmatter/abstract}
+    \include{Inge/content/frontmatter/acknowledgements}
+    \include{Inge/content/frontmatter/preface}
+\clearpage
+\tableofcontents*
+
+
+% begin main matter
+\mainmatter
+\sloppybottom
+\input{Chapitres/1_introduction}
+\input{Chapitres/2_pourquoi}
+\input{Chapitres/3_chrono}
+\input{Chapitres/4_ouenest}
+\input{Chapitres/5_CestQuoi}
+\input{Chapitres/6_ZaQuoiRessemble}
+\input{Chapitres/7_lieux}
+\input{Chapitres/8_avenir}
+\input{Chapitres/9_conclusion}
+\input{Chapitres/10_zzzzzz}
+\input{Chapitres/12_chrono}
+\input{Chapitres/13_ouenest}
+\input{Chapitres/14_CestQuoi}
+\input{Chapitres/15_CestQuoi}
+\input{Chapitres/16_CestQuoi}
+\input{Chapitres/17_CestQuoi}
+\input{Chapitres/18_CestQuoi}
+\input{Chapitres/19_CestQuoi}
+\input{Chapitres/20_CestQuoi}
+\input{Chapitres/21_CestQuoi}
+\input{Chapitres/22_CestQuoi}
+\input{Chapitres/23_CestQuoi}
+
+
+
+% begin back matter
+\backmatter
+%\input{Chapitres/9_6_points}
+%\input{Chapitres/99_plusloin}
+
+
+%\newpage\phantom{blabla}
+%\pagestyle{empty}
+\newpage\phantom{blabla}
+\pagestyle{empty}
+%\includepdf{Illustrations/couv_back.png}
+\end{document}
+
+
+% END THE DOCUMENT
